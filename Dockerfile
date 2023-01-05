@@ -5,4 +5,4 @@ RUN mvn -f /usr/src/app/pom.xml clean package
 
 FROM tomcat:9
 # Take the war and copy to webapps of tomcat
-COPY target/newapp.war /usr/local/tomcat/webapps/newapp.war
+COPY target/my-app 0.0.5.war /usr/local/tomcat/webapps/newapp.war
