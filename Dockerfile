@@ -1,4 +1,4 @@
-FROM maven:3.5.2-jdk-9 AS build
+FROM maven:latest AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
