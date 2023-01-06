@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 RUN mvn clean package
 
 FROM tomcat:9
-COPY --from=build /usr/src/app/myweb*.war /usr/local/tomcat/webapps/newapp.war
+COPY --from=build /usr/src/app/target/myweb*.war /usr/local/tomcat/webapps/newapp.war
