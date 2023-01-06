@@ -1,4 +1,4 @@
-FROM maven:latest AS build
+FROM maven:3.8-openjdk-18 AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
